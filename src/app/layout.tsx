@@ -15,17 +15,17 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ThirstMetrics — Texas Alcohol Sales Intelligence for Reps",
+  title: "ThirstMetrics — Software for the Beverage Industry",
   description:
-    "Find the right accounts faster with enriched Texas beer, wine, and spirits receipts data. Metroplex filters, DBA names, ownership groups, and industry segment tags.",
+    "ThirstMetrics builds tools for beverage professionals — from street-level market intelligence to inventory management to menu printing software.",
   icons: {
     icon: "/favicon.svg",
     apple: "/favicon.svg",
   },
   openGraph: {
-    title: "ThirstMetrics — Texas Alcohol Sales Intelligence for Reps",
+    title: "ThirstMetrics — Software for the Beverage Industry",
     description:
-      "Turn public Texas alcohol receipts into actionable account intelligence with DBA resolution, segment tags, and ownership group mapping.",
+      "ThirstMetrics builds tools for beverage professionals — from street-level market intelligence to inventory management to menu printing software.",
     type: "website",
   },
 };

@@ -7,10 +7,11 @@ import { cn } from "@/lib/utils";
 import Logo from "@/components/Logo";
 
 const NAV = [
-  { label: "Features", href: "#features" },
-  { label: "How It Works", href: "#walkthrough" },
-  { label: "Spotlight", href: "#spotlight" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Products", href: "#products" },
+  { label: "Whiskey River", href: "/whiskey-river" },
+  { label: "Streetwise", href: "/streetwise" },
+  { label: "Spotlight", href: "/spotlight" },
+  { label: "Cadenza", href: "/cadenza" },
   { label: "Contact", href: "#contact" },
 ];
 

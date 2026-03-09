@@ -35,20 +35,20 @@ const SOCIALS = [
 ];
 
 const LINKS = {
-  Product: [
-    { label: "Features", href: "#features" },
-    { label: "How It Works", href: "#walkthrough" },
-    { label: "Spotlight", href: "#spotlight" },
-    { label: "FAQ", href: "#faq" },
+  Products: [
+    { label: "Whiskey River", href: "/whiskey-river" },
+    { label: "Streetwise", href: "/streetwise" },
+    { label: "Spotlight", href: "/spotlight" },
+    { label: "Cadenza", href: "/cadenza" },
   ],
   Company: [
-    { label: "About", href: "#" },
-    { label: "Blog", href: "/blog" },
+    { label: "About", href: "/about" },
     { label: "Contact", href: "#contact" },
+    { label: "Blog", href: "/blog" },
   ],
   Legal: [
-    { label: "Privacy Policy", href: "/privacy" },
-    { label: "Terms of Service", href: "/terms" },
+    { label: "Privacy", href: "/privacy" },
+    { label: "Terms", href: "/terms" },
   ],
 };
 
@@ -65,8 +65,8 @@ export default function Footer() {
               </span>
             </a>
             <p className="text-sm text-slate-500 leading-relaxed">
-              Texas alcohol account intelligence. Public data, enriched for the
-              people who use it.
+              Beverage intelligence tools for the modern alcohol industry.
+              Public data, enriched for the people who use it.
             </p>
 
             {/* Social icons */}

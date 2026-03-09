@@ -7,12 +7,13 @@ import { isBlockedDomain } from "@/constants/email-blocklist";
 import { US_STATES } from "@/constants/us-states";
 import { revealUp, staggerContainer, staggerItem, viewport } from "@/lib/motion";
 
-const REDIRECT_URL = "https://texas.thirstmetrics.com";
-
 const REASONS = [
-  { value: "thirstmetrics-texas", label: "ThirstMetrics Texas" },
-  { value: "spotlight", label: "Spotlight" },
-  { value: "custom-data", label: "Custom Data Solution" },
+  { value: "whiskey-river", label: "Whiskey River (Texas Market Intelligence)" },
+  { value: "streetwise", label: "Streetwise (Location Intelligence)" },
+  { value: "spotlight", label: "Spotlight (Resort Inventory)" },
+  { value: "cadenza", label: "Cadenza (Menu Management)" },
+  { value: "custom-project", label: "Custom Project" },
+  { value: "other", label: "Other" },
 ] as const;
 
 type Reason = (typeof REASONS)[number]["value"];
@@ -29,7 +30,6 @@ export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
 
   const isSpotlight = reason === "spotlight";
-  const isTexas = reason === "thirstmetrics-texas";
 
   function validate(): string | null {
     if (!name.trim() || !email.trim() || !company.trim() || !reason) {
@@ -58,43 +58,32 @@ export default function ContactForm() {
     setSubmitting(true);
 
     try {
-      if (isTexas) {
-        // Server-side validation via API route (MX check, blocklist)
-        const res = await fetch("/api/beta-access", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            name: name.trim(),
-            email: email.trim(),
-            company: company.trim(),
-          }),
-        });
+      const payload = {
+        name: name.trim(),
+        email: email.trim(),
+        company: company.trim(),
+        reason,
+        ...(isSpotlight && {
+          spotlightTarget: spotlightTarget.trim(),
+          spotlightState,
+        }),
+      };
 
-        const data = await res.json();
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
 
-        if (!res.ok || !data.ok) {
-          setError(data.error || "Something went wrong. Please try again.");
-          setSubmitting(false);
-          return;
-        }
+      const data = await res.json();
 
-        window.location.href = REDIRECT_URL;
-      } else {
-        // Non-Texas reasons: log and show confirmation
-        const payload = {
-          name: name.trim(),
-          email: email.trim(),
-          company: company.trim(),
-          reason,
-          ...(isSpotlight && {
-            spotlightTarget: spotlightTarget.trim(),
-            spotlightState,
-          }),
-        };
-        console.log("[contact-form] Submitted:", payload);
-
-        setSubmitted(true);
+      if (!res.ok || !data.ok) {
+        setError(data.error || "Something went wrong. Please try again.");
+        setSubmitting(false);
+        return;
       }
+
+      setSubmitted(true);
     } catch {
       setError("Network error. Please check your connection and try again.");
       setSubmitting(false);
@@ -147,8 +136,8 @@ export default function ContactForm() {
               Questions? Let&apos;s talk.
             </h2>
             <p className="mt-3 text-base text-slate-500">
-              Whether you&apos;re interested in ThirstMetrics Texas, Spotlight,
-              or a custom data solution — we&apos;d love to hear from you.
+              Whether you&apos;re interested in Whiskey River, Streetwise, Spotlight,
+              Cadenza, or a custom project — we&apos;d love to hear from you.
             </p>
           </motion.div>
 
@@ -261,7 +250,7 @@ export default function ContactForm() {
               {submitting ? (
                 <>
                   <Loader2 className="w-4 h-4 animate-spin" />
-                  {isTexas ? "Validating…" : "Sending…"}
+                  Sending…
                 </>
               ) : (
                 <>
