@@ -4,14 +4,12 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
-import Logo from "@/components/Logo";
+
 
 const NAV = [
-  { label: "Products", href: "#products" },
-  { label: "Whiskey River", href: "/whiskey-river" },
+  { label: "Log In", href: "https://app.whiskeyrivertx.com/login" },
   { label: "Streetwise", href: "/streetwise" },
-  { label: "Spotlight", href: "/spotlight" },
-  { label: "Cadenza", href: "/cadenza" },
+  { label: "Latest Data", href: "#latest-data" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -73,9 +71,9 @@ export default function Header() {
       <div className="section-container flex items-center justify-between h-16 md:h-[4.5rem]">
         {/* Logo */}
         <a href="/" className="flex items-center gap-2.5 group">
-          <Logo className="w-9 h-9 transition-transform duration-200 group-hover:scale-105" />
+          <img src="/whiskey-river-logo.svg" alt="Whiskey River TX" className="h-9 transition-transform duration-200 group-hover:scale-105" />
           <span className="text-[1.05rem] font-bold tracking-tight text-slate-900">
-            Thirst<span className="text-brand-500">Metrics</span>
+            Whiskey<span className="text-brand-500"> River TX</span>
           </span>
         </a>
 
@@ -111,10 +109,10 @@ export default function Header() {
           </div>
 
           <a
-            href="#cta"
+            href="https://app.whiskeyrivertx.com/signup"
             className="ml-2 text-[0.84rem] font-semibold px-5 py-2 rounded-lg bg-brand-500 text-white hover:bg-brand-600 transition-colors shadow-soft"
           >
-            Get Early Beta Access
+            Start Free Trial
           </a>
         </nav>
 
@@ -165,11 +163,11 @@ export default function Header() {
               })}
             </div>
             <a
-              href="#cta"
+              href="https://app.whiskeyrivertx.com/signup"
               onClick={() => setOpen(false)}
               className="mt-1 text-center text-sm font-semibold px-5 py-2.5 rounded-lg bg-brand-500 text-white"
             >
-              Get Early Beta Access
+              Start Free Trial
             </a>
           </div>
         </motion.nav>

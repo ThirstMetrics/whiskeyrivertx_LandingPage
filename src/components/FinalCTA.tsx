@@ -20,7 +20,7 @@ export default function FinalCTA() {
             variants={staggerItem}
             className="text-3xl sm:text-4xl md:text-[2.75rem] font-bold tracking-tight text-slate-900"
           >
-            Get Early Beta Access
+            Start Your Free Trial
           </motion.h2>
           <motion.p
             variants={staggerItem}

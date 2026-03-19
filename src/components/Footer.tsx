@@ -1,6 +1,6 @@
 "use client";
 
-import Logo from "@/components/Logo";
+
 
 /* Social icon SVG paths */
 function LinkedInIcon({ className }: { className?: string }) {
@@ -38,8 +38,6 @@ const LINKS = {
   Products: [
     { label: "Whiskey River", href: "/whiskey-river" },
     { label: "Streetwise", href: "/streetwise" },
-    { label: "Spotlight", href: "/spotlight" },
-    { label: "Cadenza", href: "/cadenza" },
   ],
   Company: [
     { label: "About", href: "/about" },
@@ -59,7 +57,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row gap-12 md:gap-16 justify-between">
           <div className="max-w-xs">
             <a href="/" className="flex items-center gap-2.5 mb-4 group">
-              <Logo className="w-9 h-9 transition-transform duration-200 group-hover:scale-105" />
+              <img src="/whiskey-river-logo.svg" alt="Whiskey River TX" className="h-8" />
               <span className="text-[1.05rem] font-bold tracking-tight text-slate-900">
                 Thirst<span className="text-brand-500">Metrics</span>
               </span>
@@ -114,7 +112,7 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-slate-400">
-            &copy; {new Date().getFullYear()} ThirstMetrics. All rights reserved.
+            &copy; {new Date().getFullYear()} Whiskey River TX. All rights reserved. <span className="ml-2 text-slate-600">Powered by <a href="https://thirstmetrics.com" target="_blank" rel="noopener noreferrer" className="hover:text-brand-500 transition-colors">ThirstMetrics</a></span>
           </p>
           <div className="flex items-center gap-5">
             <a href="/privacy" className="text-xs text-slate-400 hover:text-slate-600 transition-colors">

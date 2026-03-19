@@ -135,7 +135,7 @@ export default function BetaForm({ variant = "section" }: BetaFormProps) {
           </>
         ) : (
           <>
-            Get Early Beta Access
+            Start Your Free Trial
             <ArrowRight className="w-4 h-4" />
           </>
         )}
