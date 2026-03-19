@@ -58,9 +58,6 @@ export default function Footer() {
           <div className="max-w-xs">
             <a href="/" className="flex items-center gap-2.5 mb-4 group">
               <img src="/whiskey-river-logo.svg" alt="Whiskey River TX" className="h-8" />
-              <span className="text-[1.05rem] font-bold tracking-tight text-slate-900">
-                Whiskey<span className="text-brand-500"> River TX</span>
-              </span>
             </a>
             <p className="text-sm text-slate-500 leading-relaxed">
               Beverage intelligence tools for the modern alcohol industry.

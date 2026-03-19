@@ -72,9 +72,6 @@ export default function Header() {
         {/* Logo */}
         <a href="/" className="flex items-center gap-2.5 group">
           <img src="/whiskey-river-logo.svg" alt="Whiskey River TX" className="h-9 transition-transform duration-200 group-hover:scale-105" />
-          <span className="text-[1.05rem] font-bold tracking-tight text-slate-900">
-            Whiskey<span className="text-brand-500"> River TX</span>
-          </span>
         </a>
 
         {/* Desktop nav */}
