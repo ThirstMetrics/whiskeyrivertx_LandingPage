@@ -114,9 +114,10 @@ export default function Footer() {
           <p className="text-xs text-slate-400">
             &copy; {new Date().getFullYear()} Whiskey River TX. All rights reserved.
           </p>
-          <div className="flex items-center gap-2">
-            <span className="text-xs text-slate-400">Powered by</span>
-            <a href="https://thirstmetrics.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-sm font-semibold text-slate-600 hover:text-brand-500 transition-colors">
+          <div className="flex items-center gap-3 px-4 py-2 rounded-lg bg-slate-50 border border-slate-200">
+            <span className="text-sm text-slate-500">Powered by</span>
+            <a href="https://thirstmetrics.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-bold text-slate-800 hover:text-brand-500 transition-colors">
+              <svg viewBox="0 0 40 40" className="w-6 h-6" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="9" fill="#0d7377" /><path d="M8.5 26 L16.25 20 L23.75 14.5 L31.25 9" stroke="#22d3e6" strokeWidth="2.5" strokeLinecap="round" fill="none" /><circle cx="8.5" cy="26" r="1.5" fill="#22d3e6" /><circle cx="16.25" cy="20" r="1.5" fill="#22d3e6" /><circle cx="23.75" cy="14.5" r="1.5" fill="#22d3e6" /><circle cx="31.25" cy="9" r="1.5" fill="#22d3e6" /></svg>
               ThirstMetrics
             </a>
           </div>
