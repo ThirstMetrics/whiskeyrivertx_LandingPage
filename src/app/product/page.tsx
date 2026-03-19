@@ -67,8 +67,8 @@ export default function ProductPage() {
                   {COMPARISON.map(([label, tabc, wr], i) => (
                     <tr key={i} className={i % 2 ? "bg-slate-50" : ""}>
                       <td className="py-2.5 px-4 border">{label as string}</td>
-                      <td className="py-2.5 px-4 border text-center">{tabc ? <span className="text-green-600 font-bold">\u2713</span> : <span className="text-slate-300">\u2717</span>}</td>
-                      <td className="py-2.5 px-4 border text-center"><span className="text-green-600 font-bold">\u2713</span></td>
+                      <td className="py-2.5 px-4 border text-center">{tabc ? <span className="text-green-600 font-bold">&#10003;</span> : <span className="text-slate-300">&#10007;</span>}</td>
+                      <td className="py-2.5 px-4 border text-center"><span className="text-green-600 font-bold">&#10003;</span></td>
                     </tr>
                   ))}
                 </tbody>

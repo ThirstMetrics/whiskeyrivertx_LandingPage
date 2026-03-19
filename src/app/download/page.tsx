@@ -22,13 +22,13 @@ export default function DownloadPage() {
               <p className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-2">Free Download</p>
               <h3 className="text-2xl font-bold mb-4">Basic LP Data</h3>
               <ul className="space-y-3 text-sm mb-8">
-                <li className="flex gap-2"><span className="text-green-600 font-bold">\u2713</span> All 1,119 LP licenses</li>
-                <li className="flex gap-2"><span className="text-green-600 font-bold">\u2713</span> County, city, address</li>
-                <li className="flex gap-2"><span className="text-green-600 font-bold">\u2713</span> Store type classification</li>
-                <li className="flex gap-2"><span className="text-green-600 font-bold">\u2713</span> Chain location counts</li>
-                <li className="flex gap-2 text-slate-400"><span>\u2717</span> B2B portal links</li>
-                <li className="flex gap-2 text-slate-400"><span>\u2717</span> Ordering contacts</li>
-                <li className="flex gap-2 text-slate-400"><span>\u2717</span> Provi & fintech status</li>
+                <li className="flex gap-2"><span className="text-green-600 font-bold">&#10003;</span> All 1,119 LP licenses</li>
+                <li className="flex gap-2"><span className="text-green-600 font-bold">&#10003;</span> County, city, address</li>
+                <li className="flex gap-2"><span className="text-green-600 font-bold">&#10003;</span> Store type classification</li>
+                <li className="flex gap-2"><span className="text-green-600 font-bold">&#10003;</span> Chain location counts</li>
+                <li className="flex gap-2 text-slate-400"><span>&#10007;</span> B2B portal links</li>
+                <li className="flex gap-2 text-slate-400"><span>&#10007;</span> Ordering contacts</li>
+                <li className="flex gap-2 text-slate-400"><span>&#10007;</span> Provi & fintech status</li>
               </ul>
               <a href="/data/lp_licenses.json" download className="block text-center py-3 rounded-lg font-semibold border-2 border-brand-500 text-brand-500 hover:bg-brand-500 hover:text-white transition-colors">
                 Download JSON (Free)
@@ -41,13 +41,13 @@ export default function DownloadPage() {
               <p className="text-sm font-semibold text-accent-500 uppercase tracking-wider mb-2">Platform</p>
               <h3 className="text-2xl font-bold mb-4">Full Enriched Dataset</h3>
               <ul className="space-y-3 text-sm mb-8">
-                <li className="flex gap-2"><span className="text-accent-500 font-bold">\u2713</span> Everything in free, plus:</li>
-                <li className="flex gap-2"><span className="text-accent-500 font-bold">\u2713</span> B2B ordering portal links</li>
-                <li className="flex gap-2"><span className="text-accent-500 font-bold">\u2713</span> Verified ordering contacts</li>
-                <li className="flex gap-2"><span className="text-accent-500 font-bold">\u2713</span> Provi integration status</li>
-                <li className="flex gap-2"><span className="text-accent-500 font-bold">\u2713</span> Fintech adoption mapping</li>
-                <li className="flex gap-2"><span className="text-accent-500 font-bold">\u2713</span> Market gap scoring</li>
-                <li className="flex gap-2"><span className="text-accent-500 font-bold">\u2713</span> Full enriched CSV/Excel export</li>
+                <li className="flex gap-2"><span className="text-accent-500 font-bold">&#10003;</span> Everything in free, plus:</li>
+                <li className="flex gap-2"><span className="text-accent-500 font-bold">&#10003;</span> B2B ordering portal links</li>
+                <li className="flex gap-2"><span className="text-accent-500 font-bold">&#10003;</span> Verified ordering contacts</li>
+                <li className="flex gap-2"><span className="text-accent-500 font-bold">&#10003;</span> Provi integration status</li>
+                <li className="flex gap-2"><span className="text-accent-500 font-bold">&#10003;</span> Fintech adoption mapping</li>
+                <li className="flex gap-2"><span className="text-accent-500 font-bold">&#10003;</span> Market gap scoring</li>
+                <li className="flex gap-2"><span className="text-accent-500 font-bold">&#10003;</span> Full enriched CSV/Excel export</li>
               </ul>
               <a href="https://app.whiskeyrivertx.com/signup" className="block text-center py-3 rounded-lg font-semibold bg-accent-500 text-white hover:bg-accent-600 transition-colors">
                 Start Free Trial for Full Access
