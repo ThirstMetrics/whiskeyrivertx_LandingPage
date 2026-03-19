@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 48" fill="none">
   <g transform="translate(4, 4)">
-    <path d="M6 2h28l-4 32H10L6 2z" fill="#0d7377" opacity="0.15" stroke="#0d7377" stroke-width="1.5" stroke-linejoin="round"/>
-    <path d="M9.5 16h21l-2.5 18H12L9.5 16z" fill="#0d7377" opacity="0.35"/>
-    <path d="M6 2h28" stroke="#0d7377" stroke-width="2" stroke-linecap="round"/>
-    <path d="M8 22c3-2 6 2 9 0s6 2 9 0" stroke="#22d3e6" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-    <path d="M20 8l1.5 3 3.5.5-2.5 2.5.5 3.5L20 16l-3 1.5.5-3.5L15 11.5l3.5-.5z" fill="#22d3e6" opacity="0.8"/>
+    <path d="M6 2h28l-4 32H10L6 2z" fill="#002868" opacity="0.15" stroke="#002868" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M9.5 16h21l-2.5 18H12L9.5 16z" fill="#002868" opacity="0.35"/>
+    <path d="M6 2h28" stroke="#002868" stroke-width="2" stroke-linecap="round"/>
+    <path d="M8 22c3-2 6 2 9 0s6 2 9 0" stroke="#BF0A30" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    <path d="M20 8l1.5 3 3.5.5-2.5 2.5.5 3.5L20 16l-3 1.5.5-3.5L15 11.5l3.5-.5z" fill="#BF0A30" opacity="0.9"/>
   </g>
   <text x="50" y="22" font-family="Inter, system-ui, -apple-system, sans-serif" font-weight="800" font-size="18" fill="#0f172a" letter-spacing="-0.02em">
-    <tspan>WHISKEY</tspan><tspan fill="#0d7377"> RIVER</tspan>
+    <tspan>WHISKEY</tspan><tspan fill="#002868"> RIVER</tspan>
   </text>
-  <text x="50" y="40" font-family="Inter, system-ui, -apple-system, sans-serif" font-weight="600" font-size="14" fill="#64748b" letter-spacing="0.08em">TX</text>
+  <text x="50" y="40" font-family="Inter, system-ui, -apple-system, sans-serif" font-weight="600" font-size="14" fill="#BF0A30" letter-spacing="0.08em">TX</text>
 </svg>

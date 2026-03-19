@@ -120,8 +120,6 @@ export default function Footer() {
               ThirstMetrics
             </a>
           </div>
-          <p className="hidden">
-          </p>
           <div className="flex items-center gap-5">
             <a href="/privacy" className="text-xs text-slate-400 hover:text-slate-600 transition-colors">
               Privacy
