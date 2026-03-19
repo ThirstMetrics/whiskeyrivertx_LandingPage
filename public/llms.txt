@@ -1,0 +1,25 @@
+# WhiskeyRiver TX - Texas Alcohol Market Intelligence
+
+> WhiskeyRiver TX is a SaaS platform providing Texas alcohol market intelligence for beverage distributors and sales reps. It combines TABC data with CRM tools, GPS field verification, and analytics.
+
+## Pages
+- [Home](https://whiskeyrivertx.com/): Landing page with product overview and hero content
+- [Platform](https://whiskeyrivertx.com/product): SaaS platform details - enriched LP license data, B2B portals, market intelligence
+- [LP License Directory](https://whiskeyrivertx.com/directory): Free searchable directory of all 1,119 Texas LP package store licenses
+- [County Intelligence](https://whiskeyrivertx.com/insights): Wet/dry county analysis - 67 counties with zero liquor stores, market gaps
+- [Download](https://whiskeyrivertx.com/download): Download enriched LP license dataset
+- [Blog](https://whiskeyrivertx.com/blog): Monthly market reviews, top new accounts, venue spotlights
+- [SaaS App](https://app.whiskeyrivertx.com): The SaaS platform login
+
+## Key Data
+- 1,119 active Texas LP (package store) licenses tracked
+- 3.6M+ mixed beverage receipt records
+- 254 Texas counties analyzed
+- 67 counties identified with zero liquor stores
+- Monthly data updates from Texas Comptroller
+
+## Related Sites
+- [ThirstMetrics](https://thirstmetrics.com): Parent company - beverage industry software suite
+- [PowerfulThirst](https://powerfulthirst.com): Industry news and resources
+- [TABC](https://www.tabc.texas.gov): Texas Alcoholic Beverage Commission
+- [Texas Comptroller](https://comptroller.texas.gov): Source of mixed beverage receipt data

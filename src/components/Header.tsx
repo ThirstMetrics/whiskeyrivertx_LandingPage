@@ -7,10 +7,11 @@ import { cn } from "@/lib/utils";
 
 
 const NAV = [
+  { label: "Platform", href: "/product" },
+  { label: "Free Data", href: "/directory" },
+  { label: "County Intel", href: "/insights" },
+  { label: "Download", href: "/download" },
   { label: "Log In", href: "https://app.whiskeyrivertx.com/login" },
-  { label: "Streetwise", href: "/streetwise" },
-  { label: "Latest Data", href: "#latest-data" },
-  { label: "Contact", href: "#contact" },
 ];
 
 /* Social icon SVG paths */
