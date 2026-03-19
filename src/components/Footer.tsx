@@ -59,7 +59,7 @@ export default function Footer() {
             <a href="/" className="flex items-center gap-2.5 mb-4 group">
               <img src="/whiskey-river-logo.svg" alt="Whiskey River TX" className="h-8" />
               <span className="text-[1.05rem] font-bold tracking-tight text-slate-900">
-                Thirst<span className="text-brand-500">Metrics</span>
+                Whiskey<span className="text-brand-500"> River TX</span>
               </span>
             </a>
             <p className="text-sm text-slate-500 leading-relaxed">
@@ -112,7 +112,15 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-slate-400">
-            &copy; {new Date().getFullYear()} Whiskey River TX. All rights reserved. <span className="ml-2 text-slate-600">Powered by <a href="https://thirstmetrics.com" target="_blank" rel="noopener noreferrer" className="hover:text-brand-500 transition-colors">ThirstMetrics</a></span>
+            &copy; {new Date().getFullYear()} Whiskey River TX. All rights reserved.
+          </p>
+          <div className="flex items-center gap-2">
+            <span className="text-xs text-slate-400">Powered by</span>
+            <a href="https://thirstmetrics.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-sm font-semibold text-slate-600 hover:text-brand-500 transition-colors">
+              ThirstMetrics
+            </a>
+          </div>
+          <p className="hidden">
           </p>
           <div className="flex items-center gap-5">
             <a href="/privacy" className="text-xs text-slate-400 hover:text-slate-600 transition-colors">
